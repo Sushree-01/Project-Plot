@@ -16,7 +16,7 @@ import {
   import { useState } from 'react';
   import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
   import { useNavigate } from 'react-router-dom';
-  import { FaApple, FaGoogle} from 'react-icons/fa';
+  import { FaGoogle} from 'react-icons/fa';
   import { useToast } from '@chakra-ui/react'
   
   export default function Signup1() {
@@ -91,11 +91,7 @@ import {
           </Button>
         </Link>
         <Spacer/>
-        <Link href="/">
-          <Button h="50px"  background={"white"} color={"black"} borderRadius={"16px"}  leftIcon={<FaApple />}>
-            Login with Apple
-          </Button>
-        </Link>
+        
       </Stack>
        
       <Box
