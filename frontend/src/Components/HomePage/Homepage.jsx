@@ -1,6 +1,6 @@
 import React from 'react'
 // import { TogglTrackBottom } from './TogglTrackBottom'
-// import { HomepageTop } from './HomepageTop'
+import { HomepageTop } from './HomepageTop'
 // import { HomeTop2 } from './HomeTop2'
 import { Box } from '@chakra-ui/react'
 // import { HomeMid3 } from './HomeMid3'
@@ -12,7 +12,7 @@ import Footer from './Footer'
   return (
    <Box>
     <Navbar/>
-   {/* <HomepageTop/> */}
+   <HomepageTop/>
    {/* <HomeTop2/> */}
    {/* <HomeMid1/> */}
    {/* <HomeMid2/> */}
