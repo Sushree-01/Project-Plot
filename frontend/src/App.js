@@ -1,15 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-import Prices from './Components/prices/Prices'
-import Homepage from './Components/HomePage/Homepage';
-import Navbar from './Components/NavComponents/Navbar';
 
+import Homepage from './Components/HomePage/Homepage';
+import Signup from './Components/Login/Signup'
+import Login from './Components/Login/Login';
 function App() {
   return (
     <div className="App">
-      {/* <Navbar/> */}
-      {/* <Homepage/> */}
-      <Prices/>
+
+      <Homepage/>
+
     </div>
   );
 }

@@ -55,7 +55,7 @@ const SocialButton = ({
 export default function Footer() {
   return (
     <Box
-      bg={useColorModeValue('rgb(60, 32, 73)', 'gray.900')}
+      bg={useColorModeValue('#234E70', 'gray.900')}
       color={useColorModeValue('white', 'gray.200')}>
       <Container as={Stack} maxW={'full'} py={10} >
         <Box>  
@@ -130,12 +130,6 @@ export default function Footer() {
             <SocialButton label={'Github'} href={'#'}>
               <FaGithub/>
             </SocialButton>
-          </Stack>
-
-          <Stack direction={{base:"column",md:"row",lg:"row"}} width={"100%"} bg={"#412A4C"}>
-            <Box><Text marginTop={"17%"} marginLeft={"20%"}>Discover other Project Pilot tool:</Text></Box>
-            <Box><img src="https://i.postimg.cc/j5Wxj7RL/logo.png" alt="project" /></Box>
-            <Box><img src="https://i.postimg.cc/j5Wxj7RL/logo.png" alt="" /></Box>
           </Stack>
       <Box
         borderTopWidth={1}

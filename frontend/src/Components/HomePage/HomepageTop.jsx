@@ -75,7 +75,9 @@ export const HomepageTop = () => {
     //  h={{base:"",sm:"",md:"",lg:"",xl:"120vh","2xl":"120vh"}} 
     //  border="2px solid red"
      display={"flex"}
+
      bg="#010a06"
+
      alignItems="center"
      justifyItems={"center"}
      mt={["10px","30px","70px","76px","50px"]}
