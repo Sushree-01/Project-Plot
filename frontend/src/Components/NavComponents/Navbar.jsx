@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import style from "./navbar.module.css";
-// import Product from "./Product";
-// import Track from "./Track";
+import Prices from "../prices/Prices"
+
 import {
   Accordion,
   AccordionItem,
@@ -136,7 +136,7 @@ useEffect(() => {
                 <DrawerBody padding={"20px"}>
                  <Link to="*"> <p className={style.navabarlinks} >Products <ChevronRightIcon/></p></Link>
                   
-                 <Link to="*"> <p  className={style.navabarlinks} >Pricing </p></Link>
+                 <Link to="/Prices" element={<Prices/>}> <p  className={style.navabarlinks} >Pricing </p></Link>
                  <Link to="*"> <p  className={style.navabarlinks} >Why Track? <ChevronRightIcon/></p></Link>
                  <Link to="*"> <p  className={style.navabarlinks} >Careers <ChevronRightIcon/></p></Link>
                  <Link to="*"> <p  className={style.navabarlinks} >Book a Demo </p></Link>

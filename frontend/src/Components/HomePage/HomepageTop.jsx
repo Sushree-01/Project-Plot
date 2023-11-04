@@ -75,7 +75,7 @@ export const HomepageTop = () => {
     //  h={{base:"",sm:"",md:"",lg:"",xl:"120vh","2xl":"120vh"}} 
     //  border="2px solid red"
      display={"flex"}
-     bg="#2c1338"
+     bg="#010a06"
      alignItems="center"
      justifyItems={"center"}
      mt={["10px","30px","70px","76px","50px"]}
@@ -128,7 +128,7 @@ mt="50px"
         </Box>
 
       <Box mt="20px"  display={"flex"} flexDirection={{base:"column",sm:"column",md:"row",lg:"row",xl:"row","2xl":"row"}} gap={5} alignItems="center" >
-      <Button bg="#C56FBD" color={"white"} fontSize={"90%"} size={"lg"} marginRight={"5%"} borderRadius={"50px"} _hover={{bg:"rgb(86, 66, 96)"}}  onClick={
+      <Button bg="#494749" color={"white"} fontSize={"90%"} size={"lg"} marginRight={"5%"} borderRadius={"50px"} _hover={{bg:"rgb(133, 131, 131)"}}  onClick={
                   ()=>{
                     setIsloading(true)
                     setTimeout(() => {
