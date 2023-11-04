@@ -59,7 +59,7 @@ export default function Footer() {
       color={useColorModeValue('white', 'gray.200')}>
       <Container as={Stack} maxW={'full'} py={10} >
         <Box>  
-            <img  style={{width:"15%"}} src="https://i.postimg.cc/j5Wxj7RL/logo.png" alt="" /></Box>
+            <img  style={{width:"15%"}} src="https://drive.google.com/file/d/1HgSo9mNCsN-AxdElxt-LtoVg0zxhvCAn/view?usp=sharing" alt="" /></Box>
         <SimpleGrid columns={{ base: 1, sm: 2, md:3,lg:6 }} spacing={8} >
           <Stack align={'flex-start'} >
             <ListHeader>PROJECT PILOT</ListHeader>
