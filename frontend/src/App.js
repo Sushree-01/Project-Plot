@@ -1,15 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Prices from './Components/prices/Prices'
 import Homepage from './Components/HomePage/Homepage';
-import Signup from './Components/Login/Signup'
-import Login from './Components/Login/Login';
+import Navbar from './Components/NavComponents/Navbar';
+import Payment from './Components/prices/Payment';
+
 function App() {
   return (
     <div className="App">
-
-      <Homepage/>
-
+      <Navbar/>
+      {/* <Homepage/> */}
+      <Prices/>
+      <Payment/>
     </div>
   );
 }

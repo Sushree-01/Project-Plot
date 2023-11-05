@@ -11,7 +11,7 @@ import {
     Text,
   } from "@chakra-ui/react";
 const Faqs = () => {
-  return <Box bg="#412a4c" textAlign={"center"}>
+  return <Box bg="#010a06" textAlign={"center"}>
         <Box mt={{ lg: "80px"}} w={{ lg: "70%" ,md:"85%"}} m="auto" >
         <Text fontSize={{ lg: "48px",base:"30px" }} color="#e57cd8"  mt={{base:"60px"}} pt="30px">
           FAQS

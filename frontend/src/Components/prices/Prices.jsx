@@ -19,12 +19,13 @@ const Prices = () => {
     <>
      {/* <Navbar/>  */}
     <Box style={{width:"100%"}}
-    mt="-50px"
+    mt="-20px"
     bg="#010a06"
       color={"#FCE5D8"}
       fontFamily={"sans-serif"}
       // w={{ base: "100%", md: "100%", lg: "100%" }}
       textAlign={"center"}
+      
     >
       <PricesTop />
 
