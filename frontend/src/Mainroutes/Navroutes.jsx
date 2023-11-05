@@ -1,7 +1,7 @@
 import React from 'react'
 import { Routes,Route } from 'react-router-dom'
 
-import Homepage from '../Components/Homepage/Homepage'
+import Homepage from '../Components/HomePage/Homepage'
 
 import BookDemo from '../Components/prices/BookDemo'
 import BookingConfirm from '../Components/prices/BookingConfirm'
@@ -9,15 +9,15 @@ import ChooseToggleTime from '../Components/prices/ChooseToggleTime'
 import Prices from '../Components/prices/Prices'
 import ToggleBook from '../Components/prices/ToggleBook'
 import YourInfo from '../Components/prices/YourInfo'
-import Login from '../Components/Loging/Login'
-import Signupm from "../Components/Loging/Signupm"
+import Login from '../Components/Login/Login'
+import Signup from "../Components/Login/Signup"
 
 import { Stack } from '@chakra-ui/react'
 import Sidebar from "../Components/sidebar/Sidebar"
 import Project from '../Components/NavComponents/Project/Project'
 import Client from '../Components/NavComponents/Client/Client'
 import Tag from '../Components/NavComponents/Tags/Tag'
-import { Timerd } from '../Components/TimerPage/Timer'
+// import { Timerd } from '../Components/TimerPage/Timer'
 import Career from '../Components/NavComponents/Career'
 // import TopNav from '../../Components/TimerPage/TopNav'
 const Navroutes = () => {
@@ -34,13 +34,13 @@ const Navroutes = () => {
          <Route path="/Prices" element={<Prices/>} />
          <Route path="/currentjobs" element={<Homepage/>} />
          <Route path="/login" element={<Login/>} />
-         <Route path='/signup' element={<Signupm/>}/>
+         <Route path='/signup' element={<Signup/>}/>
          {/* <Route path="/timers" element={<Sidebarroutes/>} /> */}
-           <Route path="/timer" element={
+           {/* <Route path="/timer" element={
             <Stack direction="row" gap="20px">
             <Sidebar/>
             <Timerd  />
-           </Stack>}/>
+           </Stack>}/> */}
            <Route path="/project" element={
             <Stack direction="row" gap="20px">
             <Sidebar/>  
