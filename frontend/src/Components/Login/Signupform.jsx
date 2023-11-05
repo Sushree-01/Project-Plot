@@ -39,13 +39,28 @@ import {
         setPassword(e.target.value)
     }
   
+    let checkRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[#@$%^&*!])(?=.{8})/
+
     const handleSubmit = async () => {
-        const payload = {
+      if(email === "" ||
+        password === "" ||
+        name === ""){
+          toast({
+            title: 'All the fields are required',
+            description: "Please fill all the fields",
+            status: 'error',
+            duration: 1500,
+            isClosable: true,
+            position:"top"
+          })
+        }else
+        if(checkRegex.test(password)){
+          const payload = {
             email,
             password,
             name
         }
-         await fetch("https://localhost:3000/signup"
+         await fetch("https://kind-jade-python-fez.cyclic.app/register"
          , {
             method : "POST",
             body : JSON.stringify(payload),
@@ -56,18 +71,18 @@ import {
         .then((res) => res.json())
         .then((res) => {
           console.log(res)
-           if(res.message === "required fields are email,password")
+           if(res.msg === "User already exist, please login")
            {
             toast({
-              title: 'Please fill the details.',
-              description: "Input Feilds are required .",
+              title: 'User already exist',
+              description: "User already exist, please login",
               status: 'error',
               duration: 1500,
               isClosable: true,
               position:"top"
             })
            }
-         if (res.message === "Register successfull")
+         if (res.msg === "New user registered")
           {
             toast({
               title: 'Account created.',
@@ -80,6 +95,18 @@ import {
             setTimeout(()=>{ nav("/login",{replace:true})},1000)
           }
         })
+        }else{
+          toast({
+            title: 'Invalid Password',
+            description: "Password length is minimum 8, it includes at least one Uppercase letter, special character & number",
+            status: 'error',
+            duration: 4500,
+            isClosable: true,
+            position:"top"
+          })
+
+        }
+        
         
        
     }
@@ -105,22 +132,22 @@ import {
            bg={useColorModeValue('rgb(44, 19, 56)', 'gray.700')}
            textAlign="center">
            <Stack spacing={4} >
-           <FormControl border='5px' id="email" >
+           <FormControl border='5px' id="name" isRequired>
              <FormLabel>Name</FormLabel>
-               <Input width={"100%"} h="50px" type="text" placeholder="name" value={name} onChange={handleNameChange} />
+               <Input width={"100%"} h="50px" type="text" placeholder="name" value={name} onChange={handleNameChange} required/>
              </FormControl>
-             <FormControl border='5px' id="email" >
+             <FormControl border='5px' id="email" isRequired >
              <FormLabel>Email</FormLabel>
-               <Input width={"100%"} h="50px" type="email" placeholder="email" value={email} onChange={handleEmailChange} />
+               <Input width={"100%"} h="50px" type="email" placeholder="email" value={email} onChange={handleEmailChange} required />
              </FormControl>
-             <FormControl id="password" >
+             <FormControl id="password" isRequired >
              <FormLabel>Password</FormLabel>
                <InputGroup>
                
-                 <Input h="50px" type={showPassword ? 'text' : 'password'} placeholder="password" value={password} onChange={handlePasswordChange}/>
+                 <Input h="50px" type={showPassword ? 'text' : 'password'} placeholder="password" value={password} onChange={handlePasswordChange} required/>
                  <InputRightElement h={'full'}>
                    <Button 
-                     variant={'ghost'}
+                     variant={'lightMode'}
                      onClick={() =>
                        setShowPassword((showPassword) => !showPassword)
                      }>

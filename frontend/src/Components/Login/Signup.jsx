@@ -8,7 +8,7 @@ const nav=useNavigate()
 
 return (
   <>
-    <Box bg={"red"} width={"100%"} pt="5%" pb="5%">
+    <Box bg={"#4B2C54"} width={"100%"} pt="5%" pb="5%">
       
       <Box width={"70%"} margin="auto" textAlign={"left"}>
         <Box paddingTop={"6%"} paddingBottom={"4%"}>
@@ -47,14 +47,14 @@ return (
           </Box>
           <Spacer />
           <Box>
-            <img style={{height:"85%"}} src="https://i.postimg.cc/tRrG5pkM/Peach-and-Green-Modern-Simple-Abstract-Garage-Sale-Flyer-1.png" alt="" />
+            <img style={{height:"85%"}} src="https://i.postimg.cc/Y04n81Jz/Peach-and-Green-Modern-Simple-Abstract-Garage-Sale-Flyer-3.png" alt="" />
           </Box>
         </Stack>
       </Box>
     </Box>
     <Box
       h={"50px"}
-      backgroundColor="pink.400"
+      backgroundColor="rgb(229, 124, 216)"
       display={"flex"}
       justifyContent="start"
       alignItems={"center"}
