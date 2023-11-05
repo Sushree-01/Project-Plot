@@ -47,7 +47,7 @@ return (
           </Box>
           <Spacer />
           <Box>
-            <img src="https://i.postimg.cc/MZryZZDX/signtext.png" alt="" />
+            <img style={{height:"85%"}} src="https://i.postimg.cc/tRrG5pkM/Peach-and-Green-Modern-Simple-Abstract-Garage-Sale-Flyer-1.png" alt="" />
           </Box>
         </Stack>
       </Box>
