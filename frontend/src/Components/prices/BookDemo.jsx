@@ -12,7 +12,7 @@ import {
  
 } from "@chakra-ui/react";
 import { BsCheckLg } from "react-icons/bs";
-import { Link as RouterLink, useNavigate  } from "react-router-dom";
+import { useNavigate  } from "react-router-dom";
 import Navbar from "../NavComponents/Navbar";
 import Footer from "../HomePage/Footer"
 const BookDemo = () => {
@@ -43,14 +43,14 @@ const BookDemo = () => {
             <Text as="span" color={"#e57cd8"}>
               free demo
             </Text>{" "}
-            of Toggl Track
+            of Project Pilot
           </Text>
           <Text
             fontSize={{ lg: "16.2px", md: "17px" }}
             fontWeight="bold"
             mt="40px"
           >
-            Explore how you can use Toggl Track with your team to:
+            Explore how you can use Project Pilot Track with your team to:
           </Text>
           <Box mt={"35px"}>
             <Flex gap="20px">
@@ -124,7 +124,7 @@ const BookDemo = () => {
           w={{ lg: "45%", md: "100%", base: "100%" }}
           bg="#fce5d8"
           p={{ lg: "40px", md: "40px", base: "20px" }}
-          h="580px"
+          h={{base:"400px",sm:"500px",lg:"600px"}}
         >
           <Text textAlign={"left"} fontSize={"17px"} fontWeight="bold">
             Request a 30-minute custom demo for free.
@@ -148,12 +148,12 @@ const BookDemo = () => {
               </Box>
               <Box mt="20px">
                 <FormLabel>
-                  How many people will be using Toggl Track?*
+                  How many people will be using Project?*
                 </FormLabel>
                 <Input type="email" borderColor={"black"} />
               </Box>
               <Box mt="20px">
-                <FormLabel>I plan to use Toggl Track primarily for:*</FormLabel>
+                <FormLabel>I plan to use Project Pilot Track primarily for:*</FormLabel>
                 <Input type="email" borderColor={"black"} />
               </Box>
             </FormControl>
@@ -172,7 +172,7 @@ const BookDemo = () => {
         <Flex w={"80%"} gap="50px" m="auto" p={{lg:"50px",md:"50px",base:"20px"}} >
           <Box color={"#fdf1ec"}>
             <Text fontSize={{ lg: "32px", md: "20px", }} textAlign="left">
-              “Toggl Track has given us actual data about our labor; we're able
+              “Project Pilot has given us actual data about our labor; we're able
               to see how much time each step of our creative process takes.”
             </Text>
             <Text fontSize={{lg:"15.2px",md:"15.2px",base:"12px"}} textAlign="left" mt="20px">
