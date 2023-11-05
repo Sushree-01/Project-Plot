@@ -32,9 +32,9 @@ const Timer = () => {
 
   return (
     <div className={tstyle.maintimer} >
-      {/* <div className={tstyle.timer} style={{width:"60%",margin:"auto"}}> */}
+      <div className={tstyle.timer} style={{width:"60%",margin:"auto"}}>
         {/* first child */}
-        {/* <div className={tstyle.timer1} style={{display:"flex",alignItems:"center",justifyContent:"space-between",width:"100%"}}>
+        <div className={tstyle.timer1} style={{display:"flex",alignItems:"center",justifyContent:"space-between",width:"100%"}}>
             <h5 style={{display:"block",fontWeight:"500", fontSize:"18px"}}>Stand-up meeting</h5>
           <h5 className={tstyle.headingTimer} style={{fontWeight:"500", fontSize:"18px"}}>
             
@@ -42,9 +42,9 @@ const Timer = () => {
             {mintues < 10 ? "0" + mintues : mintues}:
             {second < 10 ? "0" + second : second}
           </h5>
-        </div> */}
+        </div>
         {/* second child start */}
-        {/* <div>
+        <div>
           {" "}
           <button className={tstyle.btn}
             onClick={stop}
@@ -52,9 +52,9 @@ const Timer = () => {
           >
             {!pause ? <BsStop /> : <BsPause />}
           </button>
-        </div> */}
+        </div>
         {/* //second div end */}
-      {/* </div> */}
+      </div>
       <div style={{display:"flex",alignItems:"center",jaustifyContent:"center",flexDirection:"column"}}>
         {" "}
         <h1 className={tstyle.textundertimer}>

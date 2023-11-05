@@ -117,7 +117,7 @@ import Navbar from '../NavComponents/Navbar';
     wordBreak={"break-word"}
   >
     <Text color={"white"} textAlign={"center"}>
-    Access Your Project Pilot Account
+    Login Project Pilot Account
     </Text>
   </Heading>
  
