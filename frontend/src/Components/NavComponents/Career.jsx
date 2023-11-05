@@ -22,7 +22,7 @@ const Career = () => {
             <Link to={"/currentjobs"}>
               <p className={style.career_h2}>Current job openings</p>
               <p className={style.career_h3}>
-                We are hiring ! Apply by taking a skills testt; no resume or CV
+                We are hiring ! Apply by taking a skills test; no resume or CV
                 required
               </p>
             </Link>
@@ -38,7 +38,7 @@ const Career = () => {
           </div>
           <div>
             <Link to={"/toggletrack"}>
-              <p className={style.career_h4}>The Toggl Track Culture</p>
+              <p className={style.career_h4}>The Project Track Culture</p>
               <p className={style.career_h5}>
                 Learn more about our mission,vision and values
               </p>

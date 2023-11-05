@@ -12,13 +12,13 @@ const data = [
     
     {
         heading : "Need time tracking that helps you stay productive and bill clients accurately?",
-        sub1:"Toggl Track is indispensable for keeping track of my hours by project so I can create invoices. It makes it easy to calculate the time I need for certain types of work. All in all, it is the best way to accurately prepare your financial claims.",
+        sub1:"Project Pilot is indispensable for keeping track of my hours by project so I can create invoices. It makes it easy to calculate the time I need for certain types of work. All in all, it is the best way to accurately prepare your financial claims.",
         sub2:"Ema N. (Editor)",
         img:"https://public-assets.toggl.com/b/static/bed57e40b10610cc4477f5d05bcb524d/efbf5/type-freelancer.png"
      },
      {
         heading : "Need a simpler way to scope projects and track billable hours?",
-        sub1:"Excellent time tracking and overview of project management. Toggl Track helps us drive insights about how to better allocate time and energy to make the business grow.",
+        sub1:"Excellent time tracking and overview of project management. Project Pilot helps us drive insights about how to better allocate time and energy to make the business grow.",
         sub2:"Lisandro R. (Marketing)",
         img:"https://public-assets.toggl.com/b/static/6209decc0686b8eb13ff787236a767ff/efbf5/type-agency.png"
 
@@ -119,7 +119,7 @@ export const HomeMid3 = () => {
             // border="1px solid red"
             >
                 <Heading fontSize={{base:"25px",sm:"30px",md:"33px",lg:"33px",xl:"40px","2xl":"40px"}}  mb="20px"  align="left" >{e.heading}</Heading>
-                <Text  fontSize={{base:"12px",sm:"15px",md:"20px",lg:"16px",xl:"18px","2xl":"19px"}}   mb="20px"  align="left" color={"#E57CD8"} fontWeight={"bold"} >Learn how Toggle Track can  help you <ChevronRightIcon/></Text>
+                <Text  fontSize={{base:"12px",sm:"15px",md:"20px",lg:"16px",xl:"18px","2xl":"19px"}}   mb="20px"  align="left" color={"#E57CD8"} fontWeight={"bold"} >Learn how Project Pilot can  help you <ChevronRightIcon/></Text>
                 <Text  fontSize={{base:"12px",sm:"15px",md:"20px",lg:"16px",xl:"18px","2xl":"19px"}}   mb="20px"  align="left" >{e.sub1}</Text>
                 <Text fontSize={{base:"12px",sm:"15px",md:"20px",lg:"16px",xl:"18px","2xl":"19px"}} fontWeight="600"  mb="20px"  align="left" >{e.sub2}</Text>
 

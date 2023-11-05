@@ -36,7 +36,7 @@ const ResNavbar = () => {
             <NavLink to = "/login">
             Login
             </NavLink>
-            <NavBtnLink to="/signin">
+            <NavBtnLink to="/signup">
                 Try for free
             </NavBtnLink>
         </NavBtn>
