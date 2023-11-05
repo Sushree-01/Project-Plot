@@ -6,7 +6,7 @@ import { DiWindows } from "react-icons/di";
 import { SiAndroid } from "react-icons/si";
 const Apps = () => {
   return (
-    <Box mt="50px" bg="#f7d8f3" color={"black"} textAlign="center">
+    <Box mt="50px" bg="#f7d8f3" color={"black"} textAlign="center" >
       <Text
         fontSize={{ lg: "42px",md: "30px",base: "25px" }}
         fontWeight="bold"

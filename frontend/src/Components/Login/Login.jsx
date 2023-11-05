@@ -17,22 +17,19 @@ import {
     useToast,
     Spacer,
   } from '@chakra-ui/react';
-  
-
   import { useState } from 'react';
   import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
   import { useNavigate } from 'react-router-dom';
   import { FaGoogle} from 'react-icons/fa';
   import { Link as Linkrouter } from 'react-router-dom';
-import Navbar from '../NavComponents/Navbar';
 
   export default function Login() {
     const [showPassword, setShowPassword] = useState(false);
    const navigate=useNavigate()
    const [isLoading,setIsloading] = useState(false)
    const toast = useToast()
-    const [email, setEmail] = useState('')
-      const [password, setPassword] = useState('')
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
   
       const handleEmailChange = (e) => {
           setEmail(e.target.value)
@@ -42,11 +39,22 @@ import Navbar from '../NavComponents/Navbar';
       }
 
       const handleSubmit = async () => {
-        const payload = {
+        if(email === "" ||
+        password === "" ){
+          toast({
+            title: 'All the fields are required',
+            description: "Please fill all the fields",
+            status: 'error',
+            duration: 1500,
+            isClosable: true,
+            position:"top"
+          })
+        }else{
+          const payload = {
             email,
             password
         }
-        await fetch("https://tooglebackend.onrender.com/login", {
+        await fetch("https://kind-jade-python-fez.cyclic.app/login", {
             method : "POST",
             body : JSON.stringify(payload),
             headers: {
@@ -56,13 +64,11 @@ import Navbar from '../NavComponents/Navbar';
         .then((res) => res.json())
         .then((res) => {
           console.log(res)
-           
-
             if(res.msg=== "invalid credential")
          {
           toast({
-            title: 'Please fill the details.',
-            description: "Input Feilds are required .",
+            title: 'Invalid Details',
+            description: "Invalid Email or Password.",
             status: 'error',
             duration: 1500,
             isClosable: true,
@@ -95,14 +101,11 @@ import Navbar from '../NavComponents/Navbar';
           localStorage.setItem("email",payload.email)
           localStorage.setItem("userId",res.userId)
           navigate("/")
+        }         
+        })
+      .catch((err) => console.log(err))
         }
         
-           
-          
-        })
-        
-        
-        .catch((err) => console.log(err))
     }
     
       
@@ -110,20 +113,20 @@ import Navbar from '../NavComponents/Navbar';
   
   <>
   <Box w={"full"} >
-  <Box paddingTop={"6%"} paddingBottom={"2%"} bgColor={"green"}>
+  <Box paddingTop={"6%"} paddingBottom={"2%"} bgColor={"#4B2C54"}>
   <Heading
     fontSize={["35px", "35px", "45px"]}
     fontFamily={["GT Haptik Medium", "sans-serif"]}
     wordBreak={"break-word"}
   >
     <Text color={"white"} textAlign={"center"}>
-    Access Your Project Pilot Account
+    Login Project Pilot Account
     </Text>
   </Heading>
  
  
 </Box>
-    <Box bgColor={"green"} width={"100%"} height={"700px"} zIndex={"3"}>
+    <Box bgColor={"#4B2C54"} width={"100%"} height={"700px"} zIndex={"3"}>
   
   <Box style={{ position: "relative"}}  bg={"rgb(44, 19, 56)"} width={["97%","84%","60%","42%"]} color={"white"}  margin={"auto"}>
       <Stack spacing={8} mx={'auto'} py={12} px="6%" >
@@ -138,14 +141,14 @@ import Navbar from '../NavComponents/Navbar';
            bg={useColorModeValue('rgb(44, 19, 56)', 'gray.700')}
            p={3}>
            <Stack spacing={4} > 
-             <FormControl border='5px' id="email" >
+             <FormControl border='5px' id="email" isRequired>
               <FormLabel>Email</FormLabel>
-               <Input width={"100%"} h="52px" type="email" placeholder="email" value={email} onChange={handleEmailChange}  />
+               <Input width={"100%"} h="52px" type="email" placeholder="email" value={email} onChange={handleEmailChange} required />
              </FormControl>
-             <FormControl id="password" >
+             <FormControl id="password" isRequired>
              <FormLabel>Password</FormLabel>
                <InputGroup>
-                 <Input h="52px" type={showPassword ? 'text' : 'password'} placeholder="password" value={password} onChange={handlePasswordChange} />
+                 <Input h="52px" type={showPassword ? 'text' : 'password'} placeholder="password" value={password} onChange={handlePasswordChange} required/>
                  <InputRightElement h={'full'}>
                    <Button 
                      variant={'lightMode'}

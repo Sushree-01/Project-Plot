@@ -4,6 +4,7 @@ import {  EmailIcon } from '@chakra-ui/icons'
 
 import { FcGoogle } from 'react-icons/fc';
 import { FaApple } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 export const TogglTrackBottom = () => {
   return (
    <Box
@@ -63,22 +64,24 @@ export const TogglTrackBottom = () => {
    padding="35px"
    >
   <Text align={"left"}fontSize="45px" fontWeight={"500"}>Sign up for free</Text>
-  <Text align={"left"} mt="20px" mb="20px" >All plans come with a free, 30-day trial of Toggl Track Premium—no credit card required. Upgrade at the end of the trial or continue using Track for free.</Text>
+  <Text align={"left"} mt="20px" mb="20px" >All plans come with a free, 30-day trial of Project Pilot Track Premium—no credit card required. Upgrade at the end of the trial or continue using Track for free.</Text>
   <Box display={"flex"} mt="20px" mb="20px">
-  <Button leftIcon={<FcGoogle />} fontSize={{base:"9px",sm:"15px"}}   borderRadius="50" bg="white" color="black" >
+  <Link to={"/signup"}><Button leftIcon={<FcGoogle />} fontSize={{base:"9px",sm:"15px"}}   borderRadius="50" bg="white" color="black" >
   Sign up via Google
   </Button>
+  </Link>
   <Spacer/>
-  <Button leftIcon={<FaApple />} fontSize={{base:"9px",sm:"15px"}}  borderRadius="50" bg="white" color="black" >
+  <Link to={"/signup"}><Button leftIcon={<FaApple />} fontSize={{base:"9px",sm:"15px"}}  borderRadius="50" bg="white" color="black" >
   Sign up via Apple
-  </Button>
+  </Button></Link>
+  
   
   </Box>
- 
-  <Button mt="10px" mb="20px"   leftIcon={<EmailIcon />} borderRadius="50" bg="white" color="black" >
+  <Link to={"/signup"}><Button mt="10px" mb="20px"   leftIcon={<EmailIcon />} borderRadius="50" bg="white" color="black" >
   or sign up via email
-  </Button>
-  <Text mt="20px" mb="20px" align={"left"}>By signing up, you agree to our terms of service, privacy policy and to receiving marketing communication from Toggl Track. You can opt out anytime.</Text>
+  </Button></Link>
+  
+  <Text mt="20px" mb="20px" align={"left"}>By signing up, you agree to our terms of service, privacy policy and to receiving marketing communication from Project Pilot. You can opt out anytime.</Text>
 
    </Box>
 
@@ -98,7 +101,7 @@ export const TogglTrackBottom = () => {
    >
 
    <Text align={"left"}fontSize="30px" color={"black"} fontWeight={"500"}>Prefer a product demo instead?</Text>
-   <Text align={"left"} color={"black"}>Teams of 10+ are eligible for a personalized demo to see how Toggl Track can meet your time tracking goals</Text>
+   <Text align={"left"} color={"black"}>Teams of 10+ are eligible for a personalized demo to see how Project Pilot Track can meet your time tracking goals</Text>
    <Box align="left">
    <Button mt="20px" bg="pink.300" _hover={{bg:"pink.500",color:"white"}} borderRadius="50"size={"lg"}  color="black" >
    Book a demo

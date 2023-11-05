@@ -58,7 +58,7 @@ const BookingConfirm = () => {
           Booking confirmed
         </Text>
         <Text fontSize={"14px"} w="80%" m={"auto"} mt="20px">
-          You're booked with Toggl Marketing. An invitation has been emailed to
+          You're booked with Project Pilot Marketing. An invitation has been emailed to
           you.
         </Text>
         <Text fontWeight={"bold"} mt="20px">{`${newDate[0]} ${newDate[1]} ${newDate[2]}, ${newDate[3]}`}</Text>

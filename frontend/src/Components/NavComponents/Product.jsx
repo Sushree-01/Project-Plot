@@ -63,7 +63,7 @@ const Product = () => {
       </div>
       </div>
       <div className={style.product_sub3} >
-<p className={style.product_para1}>ToggleTrack stands against Employee surveillance.Read our Statement here</p>
+<p className={style.product_para1}>Project Pilot Track stands against Employee surveillance.Read our Statement here</p>
         </div>
       </div>
 
