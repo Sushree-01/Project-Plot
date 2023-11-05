@@ -2,7 +2,7 @@ import React from 'react'
 import { Routes,Route } from 'react-router-dom'
 
 import Homepage from '../Components/HomePage/Homepage'
-
+import Product from "../Components/NavComponents/Product"
 import BookDemo from '../Components/prices/BookDemo'
 import BookingConfirm from '../Components/prices/BookingConfirm'
 import ChooseToggleTime from '../Components/prices/ChooseToggleTime'
@@ -35,6 +35,8 @@ const Navroutes = () => {
          <Route path="/currentjobs" element={<Homepage/>} />
          <Route path="/login" element={<Login/>} />
          <Route path='/signup' element={<Signup/>}/>
+         <Route path='/products' element={<Product/>}/>
+         <Route path='/careers' element={<Career/>}/>
          {/* <Route path="/timers" element={<Sidebarroutes/>} /> */}
            {/* <Route path="/timer" element={
             <Stack direction="row" gap="20px">

@@ -48,7 +48,7 @@ export const HomeMid2 = () => {
     alignItems={"center"}
     justifyContent="center"
     >
-        <Heading fontSize={{base:"20px",sm:"22px",md:"33px",lg:"35px",xl:"40px","2xl":"40px"}}  >Companies that use Toggl Track see results in profit and productivity</Heading>
+        <Heading fontSize={{base:"20px",sm:"22px",md:"33px",lg:"35px",xl:"40px","2xl":"40px"}}  >Companies that use Project Pilot see results in profit and productivity</Heading>
 
     </Box>
 

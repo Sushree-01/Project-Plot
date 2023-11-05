@@ -26,7 +26,7 @@ bg="#2c1338"
     alignItems={"center"}
     justifyContent="center"
     >
-        <Heading color="white" fontSize={{base:"20px",sm:"22px",md:"33px",lg:"35px",xl:"40px","2xl":"40px"}}  >Why do teams <i>love</i> Toggl Track?</Heading>
+        <Heading color="white" fontSize={{base:"20px",sm:"22px",md:"33px",lg:"35px",xl:"40px","2xl":"40px"}}  >Why do teams <i>love</i> Project Pilot?</Heading>
 
 </Box>
 
@@ -92,7 +92,7 @@ mt="20px"
 
     <Image align={"center"} src="https://public-assets.toggl.com/b/static/a2fbe9cda087f0b4ddf3b1f8f768e34f/eff87/feature-trustemployee.png" />
 
-    <Text align={"left"} color="grey" >Toggl Track stands against surveillance.</Text>
+    <Text align={"left"} color="grey" >Project Pilot stands against surveillance.</Text>
     <Text align={"left"} color="black" _hover={{color:"pink.400"}} cursor={"pointer"} fontWeight={"500"} >Read about it here.</Text>
     </Box>  
 
@@ -191,14 +191,14 @@ mt="20px"
     {/* <Image align={"center"} src="https://public-assets.toggl.com/b/static/ee6383ab7e873edf369c3c6b373a3164/2923c/feature-intuitive.png" /> */}
     <Text mt="30px" align={"left"} color="#412A5C" fontWeight={"500"}
      w={{base:"90%",sm:"80%",md:"80%",lg:"85%",xl:"60%","2xl":"60%"}}
-    >From Asana to Zapier, Jira, Salesforce and much more — integrate Toggl Track with tools your team already </Text>
+    >From Asana to Zapier, Jira, Salesforce and much more — integrate Project Pilot Track with tools your team already </Text>
     <Text mt="100px" align={"left"} color="#412A5C"
     cursor={"pointer"} _hover={{color:"pink.400"}} fontWeight="500"
     >— Explore integrations <ChevronRightIcon/></Text>
     </Box>  
 <Box>
   <Heading color={"white"} margin={"auto"} textAlign={"center"} marginTop={"5%"}>Join 5 million users tracking their time to get results</Heading>
-<Text color={"#C0B5BA"} fontSize={"19px"} margin={"auto"} textAlign={"center"} marginTop={"2%"}>All plans come with a free, 30-day trial of Toggl Track Premium. Upgrade at the <br/>end of the trial or continue using Track for free.</Text>
+<Text color={"#C0B5BA"} fontSize={"19px"} margin={"auto"} textAlign={"center"} marginTop={"2%"}>All plans come with a free, 30-day trial of Project Pilot Premium. Upgrade at the <br/>end of the trial or continue using Track for free.</Text>
 <HStack margin={"auto"} justifyContent={"center"} marginTop={"2%"}><Button color={"white"} bg="#C56FBD" fontSize={"80%"} marginRight={"2%"} borderRadius={"20px"} _hover={{bg:"#564260"}} >Start tracking for free</Button> <Text _hover={{color:"pink.400"}} cursor="pointer" display="flex" justifyContent={"center"}alignItems="center" > <Text _hover={{color:"pink.400"}} color={"white"} fontWeight={"bold"}>Or explore pricing plan </Text><FaAngleRight  color="white"/></Text></HStack>
 
 </Box>

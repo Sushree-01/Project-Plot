@@ -147,7 +147,7 @@ mt="50px"
       <Button colorScheme='' p="0px" border="1px solid white" borderRadius={"200px"} _hover={{bg:"white",color:"black"}} ><FaGoogle fontSize="20px" /></Button>
       </Box>
       </Box>
-      <Text color="white" mt={"20px"} fontSize={"13px"} align="left">By signing up, you agree to our terms of service, privacy policy and to receiving marketing communication from Toggl Track. You can opt out anytime.</Text>
+      <Text color="white" mt={"20px"} fontSize={"13px"} align="left">By signing up, you agree to our terms of service, privacy policy and to receiving marketing communication from Project Pilot. You can opt out anytime.</Text>
      </Box>
 
      <Box
