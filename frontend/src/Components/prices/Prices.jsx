@@ -4,16 +4,16 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import Footer from "../HomePage/Footer"
-import Navbar from "../NavComponents/Navbar";
+
 import Apps from "./Apps";
 
 import Faqs from "./Faqs";
 import PlanComparison from "./PlanComparison";
-import PriceSignup from "./PriceSignup";
+
 
 import PricesTop from "./PricesTop";
 import Trial from "./Trial";
-import MainRotes from "./MainRotes";
+
 const Prices = () => {
   return (
     <>
