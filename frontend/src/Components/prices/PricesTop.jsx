@@ -26,11 +26,19 @@ const navigate =useNavigate()
     setAnnual2("$20");
   };
   return (
-    <Box textAlign={"center"} >
+    <Box textAlign={"center"}>
+      <Text
+        fontWeight="bold"
+        fontSize={{ base: "26.4px", md: "15px", lg: "40px" }}
+        mt={"0"}
+        pt={{ base: "24px", md: "27px", lg: "24px" }}
+      >
+        Pricing Plans
+      </Text>
       <Text
         fontWeight="bold"
         fontSize={{ base: "26.4px", md: "30px", lg: "56px" }}
-        mt={{ base: 5 }}
+        mt={"0"}
         pt={{ base: "24px", md: "27px", lg: "24px" }}
       >
         Pricing Plans

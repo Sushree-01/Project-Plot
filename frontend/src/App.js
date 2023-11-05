@@ -1,5 +1,7 @@
 
 
+
+
 import Navroutes from './Mainroutes/Navroutes';
 function App() {
   return (
@@ -10,6 +12,7 @@ function App() {
 
 
  <Navroutes/>
+
 
     </div>
   );
