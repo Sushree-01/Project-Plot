@@ -17,7 +17,7 @@ import Sidebar from "../Components/sidebar/Sidebar"
 import Project from '../Components/NavComponents/Project/Project'
 import Client from '../Components/NavComponents/Client/Client'
 import Tag from '../Components/NavComponents/Tags/Tag'
-// import { Timerd } from '../Components/TimerPage/Timer'
+import { Timerd } from '../Components/TimerPage/Timer'
 import Career from '../Components/NavComponents/Career'
 // import TopNav from '../../Components/TimerPage/TopNav'
 const Navroutes = () => {
@@ -38,11 +38,11 @@ const Navroutes = () => {
          <Route path='/products' element={<Product/>}/>
          <Route path='/careers' element={<Career/>}/>
          {/* <Route path="/timers" element={<Sidebarroutes/>} /> */}
-           {/* <Route path="/timer" element={
+           <Route path="/timer" element={
             <Stack direction="row" gap="20px">
             <Sidebar/>
             <Timerd  />
-           </Stack>}/> */}
+           </Stack>}/>
            <Route path="/project" element={
             <Stack direction="row" gap="20px">
             <Sidebar/>  

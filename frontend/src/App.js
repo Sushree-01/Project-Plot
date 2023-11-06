@@ -6,7 +6,7 @@ import Navroutes from './Mainroutes/Navroutes';
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      {/* <Navbar/> */}
       <Navroutes/>
     </div>
   );
