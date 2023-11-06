@@ -43,3 +43,17 @@ Project Plot is a project management and visualization software that helps you e
 - Task management
 - All pages are working
 
+
+
+# <h2>Home Page : </h2>
+![HomePage](![WhatsApp Image 2023-11-06 at 1 52 28 PM](https://github.com/Sushree-01/decisive-duck-1364/assets/119348515/0![WhatsApp Image 2023-11-06 at 1 52 29 PM](https://github.com/Sushree-01/decisive-duck-1364/assets/119348515/62bfc1d9-0bd1-4fbc-ae37-d0d582abb4a3)
+83a564c-c5ae-4789-9578-8cd268a9038f))
+
+# <h2>SignUp Page : </h2>
+![SignUp Page](![WhatsApp Image 2023-11-06 at 1 52 29 PM (1)](https://github.com/Sushree-01/decisive-duck-1364/assets/119348515/adf891a8-34d2-4a35-95e8-6ecc62d71f33))
+
+# <h2>Project Visualization Page : </h2>
+
+# <h2>Task Management Page : </h2>
+
+
