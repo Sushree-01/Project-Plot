@@ -1,5 +1,5 @@
 
-<h1 align="center">Project Plot</h1> 
+<h1 align="center">Project Pilot</h1> 
 <h2 align="center">Web application for visualizing and managing projects effectively.</h2> 
 <br />
 <p align="center">
