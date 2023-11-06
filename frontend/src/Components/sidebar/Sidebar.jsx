@@ -11,7 +11,8 @@ import {
   useDisclosure,
   Image,
   Button,
-  Spacer
+  Spacer,
+  Heading
   
 } from '@chakra-ui/react';
 import {
@@ -88,7 +89,7 @@ const SidebarContent = ({ onClose, ...rest }) => {
       w="14%"
       {...rest}>
         <Box display={"flex"} alignItems="center" px={"5%"} onClick={handleHome} cursor={"pointer"}>
-          <Image  margin="auto"   h="20px" w="100px" src="https://assets.website-files.com/5f699d08507c7daf18b16e6a/61235a16de9b7eb783fe6b73_toggl-track_.png"  />
+          <Heading as="h2" color="whitesmoke">Project Pilot</Heading>
           <Spacer/>
           <BellIcon w={5} h={5} color="white"/>
         </Box>
@@ -224,7 +225,7 @@ const SidebarContent = ({ onClose, ...rest }) => {
       </RouterLink>
       </>
       <>
-      <RouterLink to="/tag">
+      <RouterLink to="/teams">
      <Flex
         align="center"
         p="5px"

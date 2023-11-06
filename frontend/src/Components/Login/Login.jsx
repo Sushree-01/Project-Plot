@@ -100,7 +100,7 @@ import {
           localStorage.setItem("token", res.token)
           localStorage.setItem("email",payload.email)
           localStorage.setItem("userId",res.userId)
-          navigate("/")
+          navigate("/timer")
         }         
         })
       .catch((err) => console.log(err))

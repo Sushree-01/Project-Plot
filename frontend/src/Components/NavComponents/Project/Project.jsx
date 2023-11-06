@@ -36,12 +36,15 @@ const Project = () => {
  
   const getdata = () => {
     
-    axios.get("https://tooglebackend.onrender.com/project",{
+    axios.get("https://kind-jade-python-fez.cyclic.app/project",{
      headers:{
        "authorization":`Bearer ${token}`
      }
 
-    }).then((res) => setData(res.data.user));
+    }).then((res) => {
+      setData(res.data)
+      //console.log(res.data)
+    });
   
   };
   const handleSubmit = () => {
@@ -53,21 +56,24 @@ const Project = () => {
     }
     
   axios
-    .post("https://tooglebackend.onrender.com/project/create", payload,{
+    .post("https://kind-jade-python-fez.cyclic.app/project/create", payload,{
       headers:{
         "authorization":`Bearer ${token}`
       },
      
     })
-    .then((res) => console.log("done",res.data));
+    .then((res) => {
+      console.log("done",res.data)
+      getdata()
+    });
  
   }
   useEffect(()=>{
     getdata()
-  })
+  },[])
   const deletedata=(id)=>{
     axios
-    .delete(`https://tooglebackend.onrender.com/project/delete/${id}`,{
+    .delete(`https://kind-jade-python-fez.cyclic.app/project/delete/${id}`,{
       headers:{
         "authorization":`Bearer ${token}`
       }})
@@ -165,7 +171,7 @@ const Project = () => {
         <div >
        
           { data?.length>0 &&
-            data.map((item,index) => (
+            data?.map((item,index) => (
               
               <div className={style.map} key ={index}>
                 <div style={{display:"flex",gap:"5px"}} key={item.id} > <FaFirstOrderAlt style={{marginTop:"4px",marginLeft:"-20%"}}  /> {item.name}  </div>

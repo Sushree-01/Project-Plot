@@ -140,13 +140,13 @@ useEffect(() => {
                  <Link to="/products"> <p className={style.navabarlinks} >Products <ChevronRightIcon/></p></Link>
                   
                  <Link to="/Prices" element={<Prices/>}> <p  className={style.navabarlinks} >Pricing </p></Link>
-                 <Link to="*"> <p  className={style.navabarlinks} >Why Track? <ChevronRightIcon/></p></Link>
+                 <Link to="track"> <p  className={style.navabarlinks} >Why Track? <ChevronRightIcon/></p></Link>
                  <Link to="/careers"> <p  className={style.navabarlinks} >Careers <ChevronRightIcon/></p></Link>
-                 <Link to="*"> <p  className={style.navabarlinks} >Book a Demo </p></Link>
+                 <Link to="BookDemo"> <p  className={style.navabarlinks} >Book a Demo </p></Link>
 
                   {/* <Box> */}
-                    <button ClassName={style.navbarbtn} style={{backgroundColor:"#E57CD8",padding:"10px",color:"white",borderRadius:"20px",marginLeft:"42.5%" ,marginTop:"30px",fontWeight:"bold"}} onClick={()=>navigate("*")}>Try for free</button>
-<p style={{padding:"10px",textAlign:"center" ,marginTop:"20px",fontWeight:"bold"}}>Login</p>
+                  <Link to="signup"> <button ClassName={style.navbarbtn} style={{backgroundColor:"#E57CD8",padding:"10px",color:"white",borderRadius:"20px",marginLeft:"42.5%" ,marginTop:"30px",fontWeight:"bold"}} onClick={()=>navigate("/signup")}>Try for free</button></Link>
+<Link to="/login"><p style={{padding:"10px",textAlign:"center" ,marginTop:"20px",fontWeight:"bold"}}>Login</p></Link>
 
                   {/* </Box> */}
                 </DrawerBody>
@@ -326,7 +326,7 @@ useEffect(() => {
        
 
           <NavLink to = "/BookDemo" >
-            <Text color={nav&&"black"} fontWeight={nav&&"bold"}>
+            <Text color={nav&&"black"} fontWeight={nav&&"medium"}>
                       Book a Demo 
                       </Text> 
                       
@@ -340,7 +340,7 @@ useEffect(() => {
                       
                         :
                         <NavLink to = "/login">
-                       <RouterLink to="/login"><Button color="black" fontWeight={nav&&"bold"} style={nav?{background:"#FCE5D8"}:null}>Login</Button></RouterLink>  
+                       <RouterLink to="/login"><Button color="black" fontWeight={nav&&"medium"} style={nav?{background:"#FCE5D8"}:null}>Login</Button></RouterLink>  
                       </NavLink>
                       
                       
