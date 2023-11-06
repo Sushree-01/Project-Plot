@@ -11,7 +11,7 @@ import ToggleBook from '../Components/prices/ToggleBook'
 import YourInfo from '../Components/prices/YourInfo'
 import Login from '../Components/Login/Login'
 import Signup from "../Components/Login/Signup"
-
+import Payment from "../Components/prices/Payment"
 import { Stack } from '@chakra-ui/react'
 import Sidebar from "../Components/sidebar/Sidebar"
 import Project from '../Components/NavComponents/Project/Project'
@@ -37,6 +37,7 @@ const Navroutes = () => {
          <Route path='/signup' element={<Signup/>}/>
          <Route path='/products' element={<Product/>}/>
          <Route path='/careers' element={<Career/>}/>
+         <Route path='/payment' element={<Payment/>}/>
          {/* <Route path="/timers" element={<Sidebarroutes/>} /> */}
            <Route path="/timer" element={
             <Stack direction="row" gap="20px">

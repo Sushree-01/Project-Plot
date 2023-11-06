@@ -55,7 +55,7 @@ const Client= () => {
 // }
 const getdata = (val) => {
   if(!val){
-  axios.get(`https://tooglebackend.onrender.com/client/${userId}`,{
+  axios.get(`https://kind-jade-python-fez.cyclic.app/client/${userId}`,{
    headers:{
      "authorization":`Bearer ${token}`
    }
@@ -76,7 +76,7 @@ const handleSubmit = () => {
   }
   
 axios
-  .post(`https://tooglebackend.onrender.com/client/create/${userId}`,payload,{
+  .post(`https://kind-jade-python-fez.cyclic.app/client/create/${userId}`,payload,{
     headers:{
       "authorization":`Bearer ${token}`
     },
@@ -92,7 +92,7 @@ axios
   },[data])
 
   const handleSearch=()=>{
-    axios.get(`https://tooglebackend.onrender.com/client/search?client=${search}`,{headers:{
+    axios.get(`https://kind-jade-python-fez.cyclic.app/client/search?client=${search}`,{headers:{
       "authorization":`Bearer ${token}`
     }}).then(res=>getdata(res.data.user))
   }
@@ -100,7 +100,7 @@ axios
   const deletedata=(id)=>{
     console.log(id)
     axios
-    .delete(`https://tooglebackend.onrender.com/client/${userId}/delete/${id}`,{
+    .delete(`https://kind-jade-python-fez.cyclic.app/client/${userId}/delete/${id}`,{
       headers:{
         "authorization":`Bearer ${token}`
       },
@@ -159,7 +159,7 @@ axios
 
         <div className={style.client}>
             { data?.length>0&&
-                data?.map((item,index) => (
+                data?.map((item,index) =>{ (
                     <div key={index}>
                         
                         <Menu >
@@ -186,7 +186,7 @@ axios
                             </MenuList>
                             </Menu>
                     </div>
-                ))
+                )})
             }
         </div>
         
