@@ -30,3 +30,16 @@
 
 # <h1><a href="https://projectplot.netlify.app/">Project Plot</a> Website(Learning Purpose)</h1>
 
+# <h2>About Project Plot Website : </h2>
+
+Project Plot is a project management and visualization software that helps you effectively manage and visualize your projects. It provides features for project planning, task management, and progress tracking.
+
+## 🚀 Features
+- Homepage
+- Login/Signup User Account
+- Redux Authentication
+- Private Routes
+- Project visualization
+- Task management
+- All pages are working
+
