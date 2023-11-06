@@ -17,13 +17,7 @@ const ToggleBook = () => {
   }
   return (
     <Box bg="#f5f8fa" w="100%" textAlign={"center"}>
-      {/* <Image
-        w={{ lg: "200px",md:"200px",base:"100px"}}
-        h={{ lg: "125px" }}
-        m="auto"
-        p={{lg:"30px 0px 20px 0px",md:"30px 0px 20px 0px",base:"30px 0px 10px 0px"}}
-        src="https://21421994.fs1.hubspotusercontent-na1.net/hubfs/21421994/logo-purple.png"
-      />{" "} */}
+{" "}
       <Box bg="rgb(254 249 247)" width={{lg:"60%",md:"60%",base:"90%"}} m="auto" p={{lg:"40px",md:"40px",base:"20px"}} pb="50px">
         <Box bg="#fff">
           <Image
@@ -32,7 +26,7 @@ const ToggleBook = () => {
             src="https://21421994.fs1.hubspotusercontent-na1.net/hubfs/21421994/illo-sandtimer-1.jpg"
           />
 
-          <Text fontSize={{lg:"32px",md:"32px",base:"25px"}} fontWeight="bold" w={{lg:"40%",md:"60%"}} m={"auto"}>Book time for your Project Pilot demo below</Text>
+          <Text fontSize={{lg:"32px",md:"32px",base:"25px"}} fontWeight="bold" w={{lg:"40%",md:"60%"}} m={"auto"}>Book time for your project pilot below</Text>
           <Text fontSize={"14px"} w={{lg:"40%",md:"60%",base:"80%"}} m="auto" mt="20px" fontWeight={"light"}>
             To reserve a time that best suits you, book instantly with your
             email right here and check your inbox for the calendar invite.

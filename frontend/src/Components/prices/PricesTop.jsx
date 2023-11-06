@@ -216,7 +216,7 @@ const navigate =useNavigate()
             mt={{ base: "30px", md: "40px", lg: "70px" }}
             mb={{ base: "20px", md: "20px", lg: "" }}
             _hover={{ bg: "rgb(133, 131, 131)", border: "1px solid white" }}
-            onClick={()=>navigate("/timer")}
+            onClick={()=>navigate("/payment")}
           >
             Get started
           </Button>
@@ -353,7 +353,7 @@ const navigate =useNavigate()
             mb={{ base: "20px", md: "20px", lg: "" }}
             _hover={{ bg: "rgb(133, 131, 131)", border: "1px solid white" }}
             mt={{ base: "30px", md: "40px", lg: "120px" }}
-            onClick={()=>navigate("/timer")}
+            onClick={()=>navigate("/payment")}
           >
             Get started
           </Button>
@@ -504,7 +504,7 @@ const navigate =useNavigate()
             mb={{ base: "20px", md: "20px", lg: "" }}
             _hover={{ bg: "rgb(133, 131, 131)", border: "1px solid white" }}
             color="white"
-            onClick={()=>navigate("/timer")}
+            onClick={()=>navigate("/payment")}
           >
             Get started
           </Button>

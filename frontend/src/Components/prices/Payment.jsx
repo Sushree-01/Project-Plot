@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import Prices from './Prices'
 import { Input,Heading,Button,Textarea,Text } from '@chakra-ui/react'
 import {
   Table,
@@ -33,6 +34,7 @@ import {
 
 import { useToast } from '@chakra-ui/react'
 import { Navigate } from 'react-router-dom'
+import Navbar from '../NavComponents/Navbar'
 
 
 const Payment = () => {
@@ -94,7 +96,7 @@ const Payment = () => {
       setFlag(true)
       function redirect(){
         setTimeout(()=>{
-          return <Navigate to='/products'/>
+          return <Navigate to='/Prices'/>
         },30)
       }
       redirect()
@@ -149,7 +151,9 @@ const Payment = () => {
 // ----------------------------------------------------------------------------
 
 if(flag){
-return (<Alert
+return (<>
+<Navbar/>
+<Alert
       status='success'
       variant='subtle'
       flexDirection='column'
@@ -165,11 +169,17 @@ return (<Alert
       <AlertDescription maxWidth='sm'>
         Thanks for oredering in our application. Our team will get back to you soon.
       </AlertDescription>
-    </Alert>)
+    </Alert>
+</>
+)
     }
   
   return (
     <DIV>
+      <Navbar/>
+      <br/>
+      <br/>
+
       <div className='form-side'>
         <div className='header'>
           <Heading>Basic Information</Heading>
@@ -214,7 +224,7 @@ return (<Alert
             </div>
 
             <div className="place-order">
-              <Button type='submit' onClick={handleSubmit}>Place Order</Button>
+              <Button type='submit' onClick={handleSubmit}>Make Payment</Button>
             </div>
 
             <div id='sign-in-button'></div>
@@ -265,18 +275,26 @@ return (<Alert
 }
 
 const DIV=styled.div`
-  /* margin: 0px; */
+  margin: auto; 
+
   text-align: left;
-  /* background-color: #f4f3e8; */
-  display: flex;
-  justify-content: space-around;
+  background-color: #010a06 ;
+  height: 740px;
+  /* display: flex; */
+  /* justify-content: space-around; */
 
   .form-side{
     margin: 50px;
     width: 50%;
     border: 2px solid;
+    color: white;
+    margin-top: 100px;
+  margin-left:350px ;
+
   }
   .amount-side{
+    margin-top: 100px;
+
     margin: 50px;
     width: 30%;
   }

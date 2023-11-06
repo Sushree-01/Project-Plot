@@ -31,24 +31,10 @@ const ChooseToggleTime = () => {
         </Stack>
        
       </Flex>
-      {/* <Image
-        w={{ lg: "200px", md: "200px", base: "100px" }}
-        h={{ lg: "125px" }}
-        m="auto"
-        p={{
-          lg: "30px 0px 20px 0px",
-          md: "30px 0px 20px 0px",
-          base: "30px 0px 10px 0px",
-        }}
-        src="https://21421994.fs1.hubspotusercontent-na1.net/hubfs/21421994/logo-purple.png"
-      /> */}
       <Stack direction={{lg:"row",md:"column",base:"column"}} gap="20px" w="50%" m={"auto"} mt="50px">
         {/* **  Date Picker** */}
         <Box m={"auto"} bg="#fef9f7" p="60px" w={{lg:"90%",md:"90%"}} h="400px" ml={{base:"-60px",md:"10px"}}>
-          {/* <Box>
-            <Image   m="auto" borderRadius={"50%"} w="60px" src="https://2459647.fs1.hubspotusercontent-na1.net/hubfs/2459647/0f544a78-f429-4f41-b9ba-f9c8a763d8f0.png"/>
-          </Box> */}
-          <Text mt="20px" fontSize={"25px"}>Find a time to meet with Project Pilot</Text>
+          <Text mt="20px" fontSize={"25px"}>Find a time to meet </Text>
          <Box w="180px" border={"1px solid black"} m="auto" mt="20px">
          <DatePicker
       

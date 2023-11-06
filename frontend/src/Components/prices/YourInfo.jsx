@@ -78,22 +78,22 @@ const handleUserInfo=()=>{
         </Stack>
       </Flex>
 
-      <Box bg="white" w={{lg:"90%",md:"60%",base:"50%"}} border={"1px solid"} m="auto" mt="50px" p={{lg:"30px 40px 30px 40px",base:"30px 40px 90px 40px"}}>
-        <Text fontSize={"20px"} textAlign="center" fontWeight={"bold"}>Your information</Text>
+      <Box bg="white" w={{lg:"60%",md:"60%",base:"90%"}} border={"1px solid"} m="auto" mt="50px" p={{lg:"30px 40px 30px 40px",base:"30px 40px 90px 40px"}}>
+        <Text fontSize={"20px"} textAlign="left" fontWeight={"bold"}>Your information</Text>
         <Text ml={{lg:"-350px"}} mt="20px">{`${date} at ${time}`}</Text>
         <Stack direction={{lg:"row",md:"column",base:"column"}} mt="20px">
           <Box >
             <FormLabel>First Name*</FormLabel>
-            <Input type="text" w={{lg:"90%",md:"60%",base:"50%"}} borderColor={"black"} value={firstName} onChange={(e)=>setFirstName(e.target.value)}/>
+            <Input type="text" w={{lg:"400px"}} borderColor={"black"} value={firstName} onChange={(e)=>setFirstName(e.target.value)}/>
           </Box>
           <Box >
             <FormLabel>Last Name*</FormLabel>
-            <Input type="text" borderColor={"black"}  w={{lg:"90%",md:"60%",base:"50%"}} value={lastName} onChange={(e)=>setLastName(e.target.value)}/>
+            <Input type="text" borderColor={"black"}  w={{lg:"400px"}} value={lastName} onChange={(e)=>setLastName(e.target.value)}/>
           </Box>
         </Stack>
         <Box mt="20px">
           <FormLabel> Your Email Address*</FormLabel>
-          <Input type="email" borderColor={"black"} w={{lg:"100%",md:"80%",base:"60%"}} ml={{lg:"-30px"}} value={email} onChange={(e)=>setEmail(e.target.value)}/>
+          <Input type="email" borderColor={"black"} w={{lg:"810px",md:""}} ml={{lg:"-30px"}} value={email} onChange={(e)=>setEmail(e.target.value)}/>
         </Box>
        
         <Button mt="30px" ml={{lg:"630px"}} w="150px" bg="#ff7a59" color="white" onClick={handleUserInfo} >Confirm</Button>

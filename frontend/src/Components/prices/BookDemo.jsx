@@ -12,7 +12,7 @@ import {
  
 } from "@chakra-ui/react";
 import { BsCheckLg } from "react-icons/bs";
-import { useNavigate  } from "react-router-dom";
+import { Link as RouterLink, useNavigate  } from "react-router-dom";
 import Navbar from "../NavComponents/Navbar";
 import Footer from "../HomePage/Footer"
 const BookDemo = () => {
@@ -21,7 +21,7 @@ const BookDemo = () => {
     <>
 
    <Navbar/>
-    <Box bg="#2c1338" textAlign={"center"}>
+    <Box bg="#010a06 " textAlign={"center"}>
       <Stack
         w={"90%"}
         margin="auto"
@@ -43,14 +43,14 @@ const BookDemo = () => {
             <Text as="span" color={"#e57cd8"}>
               free demo
             </Text>{" "}
-            of Project Pilot
+            of project pilot
           </Text>
           <Text
             fontSize={{ lg: "16.2px", md: "17px" }}
             fontWeight="bold"
             mt="40px"
           >
-            Explore how you can use Project Pilot Track with your team to:
+            Explore how you can use project pilot with your team to:
           </Text>
           <Box mt={"35px"}>
             <Flex gap="20px">
@@ -124,7 +124,7 @@ const BookDemo = () => {
           w={{ lg: "45%", md: "100%", base: "100%" }}
           bg="#fce5d8"
           p={{ lg: "40px", md: "40px", base: "20px" }}
-          h={{base:"400px",sm:"500px",lg:"600px"}}
+          h="580px"
         >
           <Text textAlign={"left"} fontSize={"17px"} fontWeight="bold">
             Request a 30-minute custom demo for free.
@@ -148,12 +148,12 @@ const BookDemo = () => {
               </Box>
               <Box mt="20px">
                 <FormLabel>
-                  How many people will be using Project?*
+                  How many people will be using project pilot?*
                 </FormLabel>
                 <Input type="email" borderColor={"black"} />
               </Box>
               <Box mt="20px">
-                <FormLabel>I plan to use Project Pilot Track primarily for:*</FormLabel>
+                <FormLabel>I plan to use project pilot primarily for:*</FormLabel>
                 <Input type="email" borderColor={"black"} />
               </Box>
             </FormControl>
@@ -168,11 +168,11 @@ const BookDemo = () => {
         </Box>
       </Stack>
 
-      <Box m="auto" bg="#412a4c" mt={{base:"50px"}}>
+      <Box m="auto" bg="#010a06 " mt={{base:"50px"}}>
         <Flex w={"80%"} gap="50px" m="auto" p={{lg:"50px",md:"50px",base:"20px"}} >
           <Box color={"#fdf1ec"}>
             <Text fontSize={{ lg: "32px", md: "20px", }} textAlign="left">
-              “Project Pilot has given us actual data about our labor; we're able
+              “project pilot has given us actual data about our labor; we're able
               to see how much time each step of our creative process takes.”
             </Text>
             <Text fontSize={{lg:"15.2px",md:"15.2px",base:"12px"}} textAlign="left" mt="20px">
