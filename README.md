@@ -28,5 +28,5 @@
     <a href="#Getting-Started">Getting Started</a> &#10023; <a href="#Install">Installing</a> &#10023;   
 </p>
 
-# <h1><a href="https://projectplot.netlify.app/">Project Plot</a> Website Clone (Learning Purpose)</h1>
+# <h1><a href="https://projectplot.netlify.app/">Project Plot</a> Website(Learning Purpose)</h1>
 
