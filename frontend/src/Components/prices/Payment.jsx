@@ -108,7 +108,7 @@ const Payment = () => {
           title: 'Fill all the fields',
           description: "Some fields are empty !",
           status: 'error',
-          duration: 9000,
+          duration: 6000,
           isClosable: true,
         })
       }
@@ -136,7 +136,7 @@ const Payment = () => {
           title: 'Fill all the fields',
           description: "Some fields are empty !",
           status: 'error',
-          duration: 9000,
+          duration: 6000,
           isClosable: true,
         })
       }
@@ -167,7 +167,7 @@ return (<>
         Payment Successfully!
       </AlertTitle>
       <AlertDescription maxWidth='sm'>
-        Thanks for oredering in our application. Our team will get back to you soon.
+        Thanks for purchasing subscription in our application. Our team will get back to you soon.
       </AlertDescription>
     </Alert>
 </>
@@ -182,7 +182,7 @@ return (<>
 
       <div className='form-side'>
         <div className='header'>
-          <Heading>Basic Information</Heading>
+          <Heading>Payment Information</Heading>
         </div>
         <div className="payment-form">
 
@@ -278,7 +278,7 @@ const DIV=styled.div`
   margin: auto; 
 
   text-align: left;
-  background-color: #010a06 ;
+  background-color: #412A4C ;
   height: 740px;
   /* display: flex; */
   /* justify-content: space-around; */
