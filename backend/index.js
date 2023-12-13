@@ -13,7 +13,7 @@ app.use(cors());
 require("dotenv").config();
 const ProjectRouter = require("./routes/project.route");
 const TimerRouter = require("./routes/timer");
-
+const {BlackListModel} = require("./models/blacklist.model")
 
 app.get("/",(req,res)=>{
   res.json("welcome to my backend page")
@@ -73,6 +73,19 @@ app.post("/login", async (req, res) => {
   });
 });
 
+app.get("/logout", async(req,res)=>{
+  const token = req.headers.authorization?.split(" ")[1]
+  try {
+      const newlist = new BlackListModel({
+          token
+      })
+      await newlist.save()
+      res.status(200).send({"msg":"User logged out"})
+  } catch (error) {
+      res.send(error)
+  }
+
+})
 
 // app.use(authenticated);
 app.use("/timer",TimerRouter)
