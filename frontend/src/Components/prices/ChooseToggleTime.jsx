@@ -33,9 +33,9 @@ const ChooseToggleTime = () => {
       </Flex>
       <Stack direction={{lg:"row",md:"column",base:"column"}} gap="20px" w="50%" m={"auto"} mt="50px">
         {/* **  Date Picker** */}
-        <Box m={"auto"} bg="#fef9f7" p="60px" w={{lg:"90%",md:"90%"}} h="400px" ml={{base:"-60px",md:"10px"}}>
+        <Box m={"auto"} bg="rgb(252, 253, 247)" p="60px" w={{lg:"90%",md:"90%"}} h="400px" ml={{base:"-60px",md:"10px"}}>
           <Text mt="20px" fontSize={"25px"}>Find a time to meet </Text>
-         <Box w="180px" border={"1px solid black"} m="auto" mt="20px">
+         <Box w="300px" border={"1px solid black"} m="auto" mt="20px" p="10px">
          <DatePicker
       
             selected={startDate}
@@ -45,7 +45,6 @@ const ChooseToggleTime = () => {
             isClearable  //for cancelling date
             showYearDropdown
             scrollableMonthYearDropdown
-
           />
          </Box>
         </Box>
