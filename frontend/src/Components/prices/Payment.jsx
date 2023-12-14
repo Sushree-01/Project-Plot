@@ -190,22 +190,22 @@ return (<>
             <div className='name-surname'>
               <div className='first-name'>
                 <label>FirstName</label>
-                <Input type="text" name='fname' value={fname} onChange={handlePayment}/>
+                <Input type="text" name='fname' value={fname} onChange={handlePayment} className='input'/>
               </div>
               <div className="last-name">
                 <label>Last Name</label>
-                <Input type="text" name='lname' value={lname} onChange={handlePayment}/>
+                <Input type="text" name='lname' value={lname} onChange={handlePayment} className='input'/>
               </div>
             </div>
 
             <div className="phone-adress">
               <div className="phone">
                 <label>Phone Number</label>
-                <Input type="number" name='phone' value={phone} onChange={handlePayment}/>
+                <Input type="number" name='phone' value={phone} onChange={handlePayment} className='input'/>
               </div>
               <div className="email">
                 <label>Email Address</label>
-                <Input type="email" name='email' value={email} onChange={handlePayment}/>
+                <Input type="email" name='email' value={email} onChange={handlePayment} className='input'/>
               </div>
             </div>
 
@@ -348,6 +348,20 @@ const DIV=styled.div`
   .pay{
     display: flex;
     gap: 15px;
+  }
+  @media only screen and (min-width: 100px) and (max-width: 1180px) {
+    .name-surname,.phone-adress{
+      display: flex;
+      flex-direction: column;
+    }
+    .form-side{
+      margin-left: 100px;
+    }
+  }
+  @media only screen and (min-width: 100px) and (max-width: 780px) {
+    .form-side{
+      width: 70%;
+    }
   }
 `
 
