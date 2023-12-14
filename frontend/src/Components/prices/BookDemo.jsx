@@ -131,18 +131,8 @@ const BookDemo = () => {
           </Text>
 
           <Box>
-            <FormControl>
-              <Flex gap={{ lg: "20px", md: "20px", base: "20px" }} mt="30px">
-                <Box>
-                  <FormLabel>First Name*</FormLabel>
-                  <Input type="email" borderColor={"black"} />
-                </Box>
-                <Box>
-                  <FormLabel>Last Name*</FormLabel>
-                  <Input type="email" borderColor={"black"} />
-                </Box>
-              </Flex>
-              <Box mt="20px">
+            
+              {/* <Box mt="20px">
                 <FormLabel>Company Email*</FormLabel>
                 <Input type="email" borderColor={"black"} />
               </Box>
@@ -150,21 +140,28 @@ const BookDemo = () => {
                 <FormLabel>
                   How many people will be using project pilot?*
                 </FormLabel>
-                <Input type="email" borderColor={"black"} />
-              </Box>
-              <Box mt="20px">
+                <Input type="number" borderColor={"black"} />
+              </Box> */}
+              {/* <Box mt="20px">
                 <FormLabel>I plan to use project pilot primarily for:*</FormLabel>
-                <Input type="email" borderColor={"black"} />
-              </Box>
-            </FormControl>
-          </Box>
-
-          <Button mt="30px" bg="#e57cd8" color={"white"} w="200px" p="20px" onClick={()=> navigate("/ToggleBook")}>
+                <Input type="number" borderColor={"black"} required />
+              </Box> */}
+              <Image
+            w={"220px"}
+            m="auto"
+            mt="5rem"
+            src="https://21421994.fs1.hubspotusercontent-na1.net/hubfs/21421994/illo-sandtimer-1.jpg"
+            borderRadius="10px"
+          />
+              <Button mt="30px" bg="#e57cd8" color={"white"} w="200px" p="20px" onClick={()=>  navigate("/ChooseToggleTime")}>
            
       
-            submit
+            Book A Demo
             
           </Button>
+          </Box>
+
+          
         </Box>
       </Stack>
 
