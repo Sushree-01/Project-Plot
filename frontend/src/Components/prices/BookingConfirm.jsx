@@ -1,8 +1,10 @@
-import { Box, Text, Image, Flex, Stack, Divider } from "@chakra-ui/react";
+import { Box, Text, Image, Flex, Stack, Divider, Button } from "@chakra-ui/react";
 import React from "react";
 import { BsCheckLg } from "react-icons/bs";
+import { useNavigate } from "react-router-dom";
 
 const BookingConfirm = () => {
+  const navigate=useNavigate()
   let date=  localStorage.getItem("date")
   let newDate=date.split(" ")
   let time= localStorage.getItem("time")
@@ -58,11 +60,12 @@ const BookingConfirm = () => {
           Booking confirmed
         </Text>
         <Text fontSize={"14px"} w="80%" m={"auto"} mt="20px">
-          You're booked with Toggl Marketing. An invitation has been emailed to
+          You're booked with Project Pilot Marketing team. An invitation has been emailed to
           you.
         </Text>
         <Text fontWeight={"bold"} mt="20px">{`${newDate[0]} ${newDate[1]} ${newDate[2]}, ${newDate[3]}`}</Text>
         <Text fontWeight={"bold"}>{` at ${time}`}</Text>
+        <Button colorScheme="cyan" onClick={()=>navigate("/")}>Go to Home Page</Button>
       </Box>
     </Box>
   );
