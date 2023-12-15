@@ -36,7 +36,7 @@ const Project = () => {
  
   const getdata = () => {
     
-    axios.get("https://kind-jade-python-fez.cyclic.app/project",{
+    axios.get("https://project-pilot-zzf8.onrender.com/project",{
      headers:{
        "authorization":`Bearer ${token}`
      }
@@ -77,7 +77,9 @@ const Project = () => {
       headers:{
         "authorization":`Bearer ${token}`
       }})
-    .then((res) => console.log(res.data));
+    .then((res) => console.log(res.data))
+    getdata()
+    ;
   }
   
   
@@ -174,14 +176,14 @@ const Project = () => {
             data?.map((item,index) => (
               
               <div className={style.map} key ={index}>
-                <div style={{display:"flex",gap:"5px"}} key={item.id} > <FaFirstOrderAlt style={{marginTop:"4px",marginLeft:"-20%"}}  /> {item.name}  </div>
+                <div style={{display:"flex",gap:"5px"}} key={item._id} > <FaFirstOrderAlt style={{marginTop:"4px",marginLeft:"-20%"}}  /> {item.name}  </div>
                 <div>{item.client}</div>
                 <div>00h</div>
                 <div> 0 </div>
                 <div> {item.name} </div>
                 <Center>
               <AiFillDelete  onClick={()=>{
-                deletedata(item.id) 
+                deletedata(item._id) 
                 getdata()}}/>
             </Center>
 
