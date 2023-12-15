@@ -60,7 +60,7 @@ import {
             password,
             name
         }
-         await fetch("https://kind-jade-python-fez.cyclic.app/register"
+         await fetch("https://project-pilot-zzf8.onrender.com/register"
          , {
             method : "POST",
             body : JSON.stringify(payload),

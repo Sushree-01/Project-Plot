@@ -55,7 +55,7 @@ const Tag = () => {
 // }
 const getdata = (val) => {
   if(!val){
-  axios.get(`https://kind-jade-python-fez.cyclic.app/tags/${userId}`,{
+  axios.get(`https://project-pilot-zzf8.onrender.com/tags/${userId}`,{
    headers:{
      "authorization":`Bearer ${token}`
    }

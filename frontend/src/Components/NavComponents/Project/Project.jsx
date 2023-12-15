@@ -56,7 +56,7 @@ const Project = () => {
     }
     
   axios
-    .post("https://kind-jade-python-fez.cyclic.app/project/create", payload,{
+    .post("https://project-pilot-zzf8.onrender.com/project/create", payload,{
       headers:{
         "authorization":`Bearer ${token}`
       },
@@ -73,7 +73,7 @@ const Project = () => {
   },[])
   const deletedata=(id)=>{
     axios
-    .delete(`https://kind-jade-python-fez.cyclic.app/project/delete/${id}`,{
+    .delete(`https://project-pilot-zzf8.onrender.com/project/delete/${id}`,{
       headers:{
         "authorization":`Bearer ${token}`
       }})

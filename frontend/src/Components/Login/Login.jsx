@@ -54,7 +54,7 @@ import {
             email,
             password
         }
-        await fetch("https://kind-jade-python-fez.cyclic.app/login", {
+        await fetch("https://project-pilot-zzf8.onrender.com/login", {
             method : "POST",
             body : JSON.stringify(payload),
             headers: {
