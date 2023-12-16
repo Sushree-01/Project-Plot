@@ -52,8 +52,12 @@ Project Plot is a project management and visualization software that helps you e
 
 
 
-# <h2>SignUp Page : </h2>
-![SignUp Page](![WhatsApp Image 2023-11-06 at 1 52 29 PM (1)](https://github.com/Sushree-01/decisive-duck-1364/assets/119348515/adf891a8-34d2-4a35-95e8-6ecc62d71f33))
+# <h2>Book Demo Page : </h2>
+![Screenshot 2023-12-16 121426](https://github.com/Sushree-01/Project-Plot/assets/112815087/412f2cd5-051e-4d95-a86e-270a425768b5)
+
+# <h2>Project Page : </h2>
+![Screenshot 2023-12-16 121404](https://github.com/Sushree-01/Project-Plot/assets/112815087/905d538a-3b39-4884-8854-ad2ce429dc24)
+
 
 
 
