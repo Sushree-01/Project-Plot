@@ -11,15 +11,17 @@ clientsRouter.get("/search",async(req,res)=>{
     
     })
 //get
-clientsRouter.get("/:userId",async(req,res)=>{
+clientsRouter.get("/",async(req,res)=>{
     const user=req.params.userId;
-    console.log(user);
+    // console.log(user);
     try{
     var clients= await clientModel.find({user})
+    res.send(clients)
     }catch(err){
         console.log(err)
+        res.status(500).send('Internal Server Error')
     }
-    res.send(clients)
+    
 })
 
 //post

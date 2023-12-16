@@ -5,7 +5,7 @@ const projectsModel = require("../models/project.model");
 
 
 //search Data
-ProjectRouter.get("/",async(req,res)=>{
+ProjectRouter.get("/search",async(req,res)=>{
   let {client}=req.query;
       let user= await projectsModel.find({clientname: new RegExp(client, 'i')})
       res.send({user:user})
@@ -24,7 +24,7 @@ ProjectRouter.get("/", async (req, res) => {
 ProjectRouter.post("/create", async (req, res) => {
   const {name, client,user} = req.body;
  
-  const data = new projectsModel({ id, name, client, user });
+  const data = new projectsModel({ name, client, user });
   await data.save();
   res.send(data);
 });
@@ -36,9 +36,9 @@ ProjectRouter.patch("/edit/:id", async (req, res) => {
   console.log("id", id);
   const user = req.user.id;
   console.log(mongoose.Types.ObjectId(user));
-  const note = await projectsModel.findOne({ id: id });
+  const note = await projectsModel.findOne({ _id: id });
   const new_project = await projectsModel.findOneAndUpdate(
-    { id: id },
+    { _id: id },
     req.body,
     { new: true }
   );
@@ -49,9 +49,9 @@ ProjectRouter.patch("/edit/:id", async (req, res) => {
 ProjectRouter.delete("/delete/:id", async (req, res) => {
   const id = req.params.id;
   
-  const data = await projectsModel.findOne({ id: id });
+  const data = await projectsModel.findOne({ _id:id });
 
-  const del = await projectsModel.findOneAndDelete({ id: id });
+  const del = await projectsModel.findOneAndDelete({ _id:id });
   res.send({ message: "deleted", data: del });
 
 });

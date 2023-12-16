@@ -7,8 +7,7 @@ const projectSchema=new mongoose.Schema({
     client:{type:String,required:true},
     user:{
         type:Schema.Types.ObjectId,
-        ref:"User",
-       
+        ref:"user",
     },
 })
 
