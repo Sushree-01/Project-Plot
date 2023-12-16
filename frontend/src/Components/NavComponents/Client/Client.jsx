@@ -53,25 +53,20 @@ const Client= () => {
 // else{
 //   setLogin(true)
 // }
-const getdata = (val) => {
-  if(!val){
-  axios.get(`https://project-pilot-zzf8.onrender.com/client/${userId}`,{
+const getdata = () => {
+  axios.get(`https://project-pilot-zzf8.onrender.com/client`,{
    headers:{
      "authorization":`Bearer ${token}`
    }
 
   }).then((res) => setData(res.data));
-  }
-  else{
-    setData(val)
-  }
 
 };
-
+// console.log(data[0].client_Name)
 const handleSubmit = () => {
   const payload = {
     
-    "clientname":client,
+    "client_Name":client,
     "userId":userId
   }
   
@@ -82,7 +77,9 @@ axios
     },
    
   })
-  .then((res) => getdata());
+  .then((res) =>
+  // console.log(res.data),
+  setData(res.data),getdata())
   onClose()
 }
   
@@ -98,14 +95,14 @@ axios
   }
 
   const deletedata=(id)=>{
-    console.log(id)
+    // console.log(id)
     axios
     .delete(`https://project-pilot-zzf8.onrender.com/client/${userId}/delete/${id}`,{
       headers:{
         "authorization":`Bearer ${token}`
       },
     })
-    .then((res) => console.log(res.data));
+    .then((res) => getdata());
   }
   
 
@@ -158,37 +155,38 @@ axios
         </div>
 
         <div className={style.client}>
-            { data?.length>0&&
-                data?.map((item,index) =>{ (
-                    <div key={index}>
-                        
-                        <Menu >
-                            <MenuButton
-                                px={4}
-                                py={2}
-                                transition='all 0.2s'
-                                borderRadius='md'
-                                borderWidth='1px'
-                                _hover={{ bg: 'gray.400' }}
-                                _expanded={{ bg: 'pink.400' }}
-                                _focus={{ boxShadow: 'outline' }}
-                                fontSize="14px"
-                                fontWeight="500"
-                            >
-                                {item.clientname} <DragHandleIcon />
-                                </MenuButton>
-                            <MenuList>
-                                {/* <MenuItem>Edit</MenuItem> */}
-                                <MenuItem color={"red"} onClick={()=>{
-                                    deletedata(item._id) 
-                                    getdata()}}>Delete</MenuItem>
-                                
-                            </MenuList>
-                            </Menu>
-                    </div>
-                )})
-            }
-        </div>
+    {data?.length > 0 &&
+        data?.map((item, index) => (
+            <div key={index}>
+                <Menu>
+                    <MenuButton
+                        px={4}
+                        py={2}
+                        transition='all 0.2s'
+                        borderRadius='md'
+                        borderWidth='1px'
+                        _hover={{ bg: 'gray.400' }}
+                        _expanded={{ bg: 'pink.400' }}
+                        _focus={{ boxShadow: 'outline' }}
+                        fontSize="14px"
+                        fontWeight="500"
+                    >
+                        {item.client_Name} <DragHandleIcon />
+                    </MenuButton>
+                    <MenuList>
+                        {/* <MenuItem>Edit</MenuItem> */}
+                        <MenuItem color={"red"} onClick={() => {
+                            deletedata(item._id);
+                            getdata();
+                        }}>
+                            Delete
+                        </MenuItem>
+                    </MenuList>
+                </Menu>
+            </div>
+        ))}
+</div>
+
         
     </div>
   )
