@@ -21,14 +21,14 @@
 
 [![Mongodb](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white "Mongodb")]
 
-<h3 align="center"><a href="https://ephemeral-liger-0a522d.netlify.app/"><strong>Want to see a live preview »</strong></a></h3>
+<h3 align="center"><a href="https://project-pilot.netlify.app/"><strong>Want to see a live preview »</strong></a></h3>
 
 <p align="center"> 
     <br />&#10023;
     <a href="#Getting-Started">Getting Started</a> &#10023; <a href="#Install">Installing</a> &#10023;   
 </p>
 
-# <h1><a href="https://projectplot.netlify.app/">Project Plot</a> Website(Learning Purpose)</h1>
+# <h1><a href="https://project-pilot.netlify.app/">Project Plot</a> Website(Learning Purpose)</h1>
 
 # <h2>About Project Plot Website : </h2>
 
